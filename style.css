@@ -31,7 +31,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	width: 75%;
+	width: 70%;
 	max-width: 1140px;
 	min-width: min-content;
 }
@@ -81,8 +81,7 @@ main {
 	display: flex;
 	flex-flow: row wrap-reverse;
 	justify-content: center;
-	column-gap: 16px;
-	row-gap: 24px;
+	gap: 24px 20px;
 	/* Subtract the header's height from padding-top */
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -99,13 +98,14 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	gap: 4px;
+	gap: 2px;
 }
 
 .link-button {
 	border-radius: 8px;
 	padding: 6px 24px;
 	width: max-content;
+	height: min-content;
 	font-weight: bold;
 }
 
@@ -117,7 +117,6 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-height: 360px;
 }
 
 .info-wrapper {
@@ -167,7 +166,7 @@ main {
 	gap: 8px;
 	margin: 0 auto;
 	padding: 100px 0;
-	width: 80%;
+	width: 75%;
 	min-width: 380px;
 }
 
@@ -182,6 +181,35 @@ main {
 	width: max-content;
 	font-weight: bold;
 	color: black;
+}
+
+.cta-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	margin: 100px 0;
+	border-radius: 8px;
+	padding: 54px 0px;
+}
+
+.cta-wrapper > .text-wrapper {
+	/* flex: 1 0 0; */
+	flex: 1;
+	min-width: 250px;
+	margin-left: 60px;
+}
+
+.cta-heading {
+	font-weight: bold;
+}
+
+.cta-wrapper > .link-button {
+	/* flex: 0 0 auto; */
+	flex: none;
+	border: 3px solid #F9FAF8;
+	margin-right: 60px;
 }
 
 /* Footer */
@@ -201,12 +229,11 @@ footer {
 section {
 	border: 4px solid orange;
 }
-/* 
-.quote-wrapper {
+
+.text-and-image {
 	border: 4px solid lime;
 }
 
-.quote-text,
-.quote-source {
+.text-wrapper {
 	border: 4px solid violet;
-} */
+}
