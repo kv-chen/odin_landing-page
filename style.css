@@ -12,6 +12,10 @@ img {
 	height: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* General */
 
 html {
@@ -22,6 +26,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -29,6 +34,43 @@ body {
 	width: 80%;
 	max-width: 1140px;
 	min-width: min-content;
+}
+
+.hero-heading {
+	font: 900 48px;
+	color: #F9FAF8;
+}
+
+.hero-body {
+	font: 18px;
+	color: #E5E7EB;
+}
+
+.header-logo {
+	font: 24px;
+	color: #F9FAF8;
+}
+
+.info-heading {
+	font: 900 36px;
+	color: #1F2937;
+}
+
+.quote-text {
+	font: italic lighter 36px;
+	color: #1F2937;
+}
+
+.dark-background {
+	background-color: #1F2937;
+}
+
+.button-background {
+	background-color: #3882F6;
+}
+
+.quote-background {
+	background-color: #E5E7EB;
 }
 
 /* Header */
