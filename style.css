@@ -106,6 +106,13 @@ main {
 	align-items: center;
 }
 
+.link-button {
+	border-radius: 8px;
+	padding: 8px 32px;
+	width: max-content;
+	font-weight: bold;
+}
+
 /* Footer */
 
 /* Borders for debugging */
