@@ -9,6 +9,7 @@
 img {
 	display: block;
 	max-width: 100%;
+	max-height: 100%;
 	height: auto;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	width: 80%;
+	width: 75%;
 	max-width: 1140px;
 	min-width: min-content;
 }
@@ -51,7 +52,7 @@ body {
 }
 
 .quote-text {
-	font: italic lighter 36px Roboto, sans-serif;
+	font: italic 300 36px Roboto, sans-serif;
 	color: #1F2937;
 }
 
@@ -83,8 +84,8 @@ main {
 	column-gap: 16px;
 	row-gap: 24px;
 	/* Subtract the header's height from padding-top */
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .text-and-image > .text-wrapper,
@@ -98,7 +99,6 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	/* Remove gap from here if reusing text-wrapper */
 	gap: 4px;
 }
 
@@ -117,6 +117,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-height: 360px;
 }
 
 .info-wrapper {
@@ -135,10 +136,11 @@ main {
 	flex-flow: row wrap;
 	justify-content: center;
 	gap: 36px 48px;
+	min-width: 380px;
 }
 
 .panel {
-	width: 156px;
+	width: 165px;
 }
 
 .panel-image {
@@ -148,14 +150,37 @@ main {
 	margin-top: -3.5px;
 	border: 3.5px solid #3882F6;
 	border-radius: 16px;
-	width: 156px;
-	height: 156px;
+	width: 165px;
+	height: 165px;
 	overflow: hidden;
 }
 
 .panel-text {
 	margin-top: 8px;
 	text-align: center;
+	color: black;
+}
+
+.quote-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 8px;
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 80%;
+	min-width: 380px;
+}
+
+.quote-text {
+	text-align: justify;
+}
+
+.quote-source {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 5%;
+	width: max-content;
+	font-weight: bold;
 	color: black;
 }
 
@@ -177,10 +202,11 @@ section {
 	border: 4px solid orange;
 }
 /* 
-.panel-image {
+.quote-wrapper {
 	border: 4px solid lime;
 }
 
-.panel {
+.quote-text,
+.quote-source {
 	border: 4px solid violet;
 } */
