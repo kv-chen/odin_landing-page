@@ -24,7 +24,7 @@ html {
 
 body {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	min-height: 100%;
 }
 
@@ -48,11 +48,6 @@ body {
 .header-logo {
 	font: 24px Roboto, sans-serif;
 	color: #F9FAF8;
-}
-
-.info-heading {
-	font: 900 36px Roboto, sans-serif;
-	color: #1F2937;
 }
 
 .quote-text {
@@ -88,8 +83,8 @@ main {
 	column-gap: 16px;
 	row-gap: 24px;
 	/* Subtract the header's height from padding-top */
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .text-and-image > .text-wrapper,
@@ -101,15 +96,10 @@ main {
 
 .text-wrapper {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	justify-content: center;
-	gap: 8px;
-}
-
-.image-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* Remove gap from here if reusing text-wrapper */
+	gap: 4px;
 }
 
 .link-button {
@@ -121,6 +111,52 @@ main {
 
 .text-wrapper > .link-button {
 	margin-top: 12px;
+}
+
+.image-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info-wrapper {
+	padding: 100px 0;
+}
+
+.info-heading {
+	margin-bottom: 56px;
+	text-align: center;
+	font: 900 36px Roboto, sans-serif;
+	color: #1F2937;
+}
+
+.info-body {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 36px 48px;
+}
+
+.panel {
+	width: 156px;
+}
+
+.panel-image {
+	box-sizing: content-box;
+	/* It's important that the margins and border be equal in magnitude*/
+	margin-left: -3.5px;
+	margin-top: -3.5px;
+	border: 3.5px solid #3882F6;
+	border-radius: 16px;
+	width: 156px;
+	height: 156px;
+	overflow: hidden;
+}
+
+.panel-text {
+	margin-top: 8px;
+	text-align: center;
+	color: black;
 }
 
 /* Footer */
@@ -141,11 +177,10 @@ section {
 	border: 4px solid orange;
 }
 /* 
-.container {
+.panel-image {
 	border: 4px solid lime;
 }
 
-.text-wrapper,
-.image-wrapper {
+.panel {
 	border: 4px solid violet;
 } */
