@@ -26,7 +26,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -37,27 +36,27 @@ body {
 }
 
 .hero-heading {
-	font: 900 48px;
+	font: 900 48px Roboto, sans-serif;
 	color: #F9FAF8;
 }
 
 .hero-body {
-	font: 18px;
+	font: 18px Roboto, sans-serif;
 	color: #E5E7EB;
 }
 
 .header-logo {
-	font: 24px;
+	font: 24px Roboto, sans-serif;
 	color: #F9FAF8;
 }
 
 .info-heading {
-	font: 900 36px;
+	font: 900 36px Roboto, sans-serif;
 	color: #1F2937;
 }
 
 .quote-text {
-	font: italic lighter 36px;
+	font: italic lighter 36px Roboto, sans-serif;
 	color: #1F2937;
 }
 
