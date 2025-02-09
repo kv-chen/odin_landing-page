@@ -92,8 +92,8 @@ main {
 	padding-bottom: 80px;
 }
 
-.text-wrapper,
-.image-wrapper {
+.text-and-image > .text-wrapper,
+.text-and-image > .image-wrapper {
 	/* flex: 1 1 0; */
 	flex: 1;
 	min-width: 320px;
