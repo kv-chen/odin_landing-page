@@ -52,6 +52,13 @@ main {
 	min-width: 240px;
 }
 
+.text-wrapper {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	/* gap: 4px; */
+}
+
 .image-wrapper {
 	display: flex;
 	justify-content: center;
