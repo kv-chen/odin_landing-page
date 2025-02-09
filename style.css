@@ -14,6 +14,20 @@
 	max-width: 1140px;
 }
 
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
 /* Borders for debugging */
 
 body {
