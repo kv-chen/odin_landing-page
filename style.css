@@ -13,6 +13,10 @@ img {
 	height: auto;
 }
 
+ul {
+	list-style: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -47,7 +51,7 @@ body {
 }
 
 .header-logo {
-	font: 24px Roboto, sans-serif;
+	font: bold 24px Roboto, sans-serif;
 	color: #F9FAF8;
 }
 
@@ -70,6 +74,26 @@ body {
 
 /* Header */
 
+.navbar-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px 32px;
+	padding: 16px 0;
+}
+
+.right-items {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 16px;
+}
+
+.header-logo,
+.right-items > li {
+	min-width: max-content;
+}
+
 /* Main */
 
 main {
@@ -83,15 +107,15 @@ main {
 	justify-content: center;
 	gap: 24px 20px;
 	/* Subtract the header's height from padding-top */
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 80px;
+	padding-bottom: 100px;
 }
 
 .text-and-image > .text-wrapper,
 .text-and-image > .image-wrapper {
 	/* flex: 1 1 0; */
 	flex: 1;
-	min-width: 320px;
+	min-width: 360px;
 }
 
 .text-wrapper {
@@ -104,13 +128,14 @@ main {
 .link-button {
 	border-radius: 8px;
 	padding: 6px 24px;
-	width: max-content;
+	min-width: max-content;
+	max-width: max-content;
 	height: min-content;
 	font-weight: bold;
 }
 
 .text-wrapper > .link-button {
-	margin-top: 12px;
+	margin-top: 14px;
 }
 
 .image-wrapper {
@@ -178,30 +203,31 @@ main {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: 5%;
-	width: max-content;
+	min-width: max-content;
 	font-weight: bold;
 	color: black;
 }
 
 .cta-wrapper {
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	align-items: center;
-	gap: 60px;
+	gap: 20px 60px;
 	margin: 100px 0;
 	border-radius: 8px;
-	padding: 54px 0px;
+	padding: 48px 48px;
 }
 
 .cta-wrapper > .text-wrapper {
 	/* flex: 1 0 0; */
 	flex: 1;
-	min-width: 250px;
-	margin-left: 60px;
+	min-width: 200px;
+	max-width: max-content;
 }
 
 .cta-heading {
+	width: max-content;
 	font-weight: bold;
 }
 
@@ -209,7 +235,6 @@ main {
 	/* flex: 0 0 auto; */
 	flex: none;
 	border: 3px solid #F9FAF8;
-	margin-right: 60px;
 }
 
 /* Footer */
@@ -220,7 +245,7 @@ footer > p {
 }
 
 /* Borders for debugging */
-
+/* 
 body {
 	border: 4px solid cyan;
 }
@@ -235,10 +260,12 @@ section {
 	border: 4px solid orange;
 }
 
-.text-and-image {
+.text-and-image,
+.cta-wrapper {
 	border: 4px solid lime;
 }
 
 .text-wrapper {
 	border: 4px solid violet;
-}
+} 
+*/
