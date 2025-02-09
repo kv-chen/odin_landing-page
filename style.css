@@ -214,6 +214,11 @@ main {
 
 /* Footer */
 
+footer > p {
+	text-align: center;
+	padding: 40px 0;
+}
+
 /* Borders for debugging */
 
 body {
