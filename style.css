@@ -74,6 +74,11 @@ body {
 
 /* Header */
 
+header {
+	position: fixed;
+	width: 100%;
+}
+
 .navbar-wrapper {
 	display: flex;
 	flex-flow: row wrap;
